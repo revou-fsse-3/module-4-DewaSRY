@@ -11,7 +11,7 @@ const index: indexComponents = ({ children, q, ...resProps }) => {
   const { isLoading, error } = useSelectors((s) => s.users);
 
   console.log(q);
-  // console.log(error);
+  console.log(error);
   return (
     <div
       {...resProps}
