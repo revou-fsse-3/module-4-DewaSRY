@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alert-animation {
+  animation: alert-animation 1.5s ease-in-out;
+}
+
+@keyframes alert-animation {
+  0% {
+    transform: translateY(100%);
+  }
+  25% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.alert-animation-close {
+  animation: alert-animation-close 1s ease-in-out;
+}
+@keyframes alert-animation-close {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(150%);
+  }
+}
+
+.test {
+  animation: test 1s forwards;
+}
+
+@keyframes test {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.table-small {
+  display: grid;
+  grid-template-columns: 10px 50px 300px repeat(3, 200px) 75px;
+}
+.table-medium {
+  display: grid;
+  grid-template-columns: 50px 150px 300px repeat(2, 150px) 100px 230px;
+}
